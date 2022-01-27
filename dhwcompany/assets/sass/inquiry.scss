@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+.main {
+    background-color: #f6f8f9;
+}
+
+.section-top{
+
+    &__image {
+        height: 200px;/*デバイス（スマートフォン）の高さ一杯にするため*/
+        background-image: url("../images/common/mountain04.jpg");
+        background-position: center;
+        background-size: 100% auto;/*左右は自動、高さは100%ピッタリ合わせる*/
+        background-repeat: no-repeat;
+
+    }
+
+    &__image-filter {
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 80px;
+        height: 100%;
+        width: 100%;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 960px) {
+   .section-top {
+       &__image {
+           height: 600px;
+       }
+       &__image-filter {
+         padding-top: 210px; 
+       }
+       h2 {
+         font-size: 4rem;
+       }
+   } 
+}
+
+.inquiry-form {
+    padding: 50px 24px 60px 24px;
+    text-align: left;
+
+    p {
+        margin-bottom: 40px;
+
+        label {
+            font-weight: 600;
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        label.small-label {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 1.6rem;
+            padding-left: 30px;
+        }
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select, textarea {
+        display: block;
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+        border: solid 1px #777;
+    }
+
+    textarea {
+        height: 300px;
+        padding-top: 10px;
+    }
+
+    &__privacy-link {
+        color: #333;
+    }
+
+    &__submit {
+        display: block;
+        height: 48px;
+        max-width: 320px;
+        width: 100%;
+        background-color: #004bb1;
+        color: #fff;
+        font-size: 2.4rem;
+        border-radius: 48px;
+        border: none;
+    }
+
+}
+
+@media (min-width: 960px) {
+    .inquiry-form {
+        padding: 120px 24px;
+        max-width: 1160px;
+        margin: 0 auto;
+
+        p label {
+            display: inline-block;
+            width: 260px;
+            vertical-align: top;
+            font-weight: 600;
+        }
+        &__contact-method {
+            display: inline-block;
+        }
+        input[type="text"],
+        input[type="email"],
+        select, textarea {
+            display: inline-block;
+            width: 400px;
+        }
+        textarea {
+            width: 600px;
+            height: 450px;
+        }
+        &__privacy-checkbox {
+            margin-left: 260px;
+        }
+        &__submit {
+            margin: 0 auto;
+        }
+    }
+}
