@@ -1,0 +1,91 @@
+.footer {
+    min-height: 228px;/*最低限の高さ*/
+    background-color: #888;
+    padding-top: 46px;
+    padding-bottom: 20px;
+    font-weight: 600;
+
+    &__site-map {
+        margin-bottom: 30px;
+        h2{
+            display: none;
+        }
+
+    }
+
+    &__site-map li {
+        margin: 0 10px;
+        display: inline-block;
+        a {
+            text-decoration: none;
+            color: #CAD0D2;
+            :visited {
+                color: #CAD0D2;
+            }
+        }
+    }
+
+    &__sns-links {
+        margin-bottom: 80px;
+
+        li {
+            display: inline-block;
+            width: 20px;
+            margin: 0 10px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .copyright {
+        color: #fff;
+    }
+}
+@media (min-width: 1040px) {
+    .footer {
+        margin: 0;
+        padding: 0;
+
+        &__container {
+            max-width: 1040px;
+            margin: 0 auto;
+            padding-top: 40px;
+            text-align: left;
+        }
+
+        &__site-map {
+            float: left;
+            h2{
+                display: inline-block;
+                width: 120px;
+                vertical-align: top;/*縦上方向の揃え*/
+                color: #fff;
+            }
+            ul {
+                display: inline-block;
+                margin-left: 10px;
+                li {
+                    margin: 0;
+                    display: block;
+                }
+            }
+
+
+        }
+
+        &__sns-links {
+            float: right;
+        }
+
+        .copyright {
+           small {
+            clear: both;
+            display: block;
+            text-align: center;
+            } 
+        }
+
+    }
+    
+}

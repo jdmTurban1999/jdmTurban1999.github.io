@@ -1,0 +1,244 @@
+.main {
+    background-color: #f6f8f9;
+}
+
+@media (min-width: 1040px) {
+    main {
+        padding-bottom: 120px;
+    }
+}
+
+.section-top {
+    margin-bottom: 60px;
+
+    &__image {
+        height: 338px;
+        background-image: url("../images/top/top_image.jpg");
+        background-position: center;
+        background-size: auto 100%;/*左右は自動、高さは100%*/
+        background-repeat: no-repeat;
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    &__title-ja {
+        font-size: 1.6rem;
+        position: absolute;
+        width: 100%;
+        top: 18px;
+    }
+
+    &__title-en {
+        position: absolute;
+        width: 100%;
+        bottom: 10px;
+    }
+
+    &__lead {
+        margin: 0 24px ;
+    }
+}
+@media (min-width: 480px) {
+    .section-top {
+        &__image {
+            height: 600px;
+            margin-bottom: 80px;
+        }
+
+        &__title-ja {
+            font-size: 3.2rem;
+            position: static;/*position: absoluteの解除*/
+            max-width: 1040px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 60px 0 0 24px;
+        }
+
+        &__title-en {
+            font-size: 2rem;
+            position: static;/*position: absoluteの解除*/
+            max-width: 1040px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 25px 0 0 24px;
+        }
+
+        &__lead {
+            font-size: 2.4rem;
+            font-weight: 600;
+            line-height: 4rem;
+        }
+    }
+    
+}
+
+
+.section-menu {
+    margin-bottom: 80px;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    ul {
+        margin: 0 24px;
+        list-style: none;
+        li {
+            max-width: 327px;
+            margin: 0 auto;
+            background-color: #fff;
+            margin-bottom: 40px;
+            border-radius: 6px;
+            text-align: left;
+        }
+    }
+
+    &__item-picture {
+        width: 100%;
+        height: 186px;
+        object-fit: cover;
+        /*↑置換コンテンツはアスペクト比を維持したまま、要素のコンテンツボックス全体を埋めるように拡大縮小されます。オブジェクトのアスペクト比がボックスのアスペクト比と合わない場合は、オブジェクトの方が合うように切り取られます。*/
+        object-position: 0 0 ;/*一番上の一番左から指定。*/
+        border-radius: 6px 6px 0 0 ;
+    }
+
+    &__item-title {
+    padding: 14px 20px;
+    }
+
+    &__item-description {
+    padding: 0 20px 20px 20px;
+    }
+
+    &__item-description span {
+    font-size: 1.2rem;
+    }
+}
+@media (min-width: 1040px) {
+    .section-menu {
+        margin-bottom: 20px;
+
+        ul {
+            max-width: 1040px;
+            padding: 0;
+            margin: 0 auto;
+
+            li{
+                display: inline-block;
+                width: 320px;/* 320×3=960px */
+                margin-right: 40px;
+            }
+            li:last-child {
+                margin-right: 0;
+            }
+        }
+
+    }
+
+}
+
+
+.section-access {
+    padding-top: 40px;
+    background-color: #fff;
+    margin-bottom: 60px;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    address {
+        font-style: normal;
+        margin-bottom: 40px;
+    }
+
+    &__break:after {
+        content: "\A";
+        white-space: pre;
+    }
+
+    &__map {
+        height: 330px;
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: solid 1px #333333;
+        }
+    }
+
+}
+@media (min-width: 1040px) {
+    .section-access {
+        padding: 60px 36px;
+        margin: 0 auto 60px;
+        max-width: 1040px;
+        box-sizing: border-box;
+
+        &__title {
+            padding-bottom: 40px;
+            border-bottom: solid 1px #333;
+            margin-bottom: 30px;
+        }
+
+        address {
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+        }
+
+        &__break:after {
+            content: "";
+        }
+
+        &__map {
+            max-width: 840px;
+            margin: 0 auto;
+            height: 340px;
+        }
+    }
+}
+
+.section-news {
+    background-color: #fff;
+    padding: 40px 24px 0;
+
+    &__title {
+        padding-bottom: 40px;
+        border-bottom: solid 1px #333333;
+        margin-bottom: 40px;
+    }
+
+    ol {
+        list-style-type: none;
+        li {
+            margin-bottom: 40px;
+            text-align: left;
+            time {
+                font-weight: 600;
+                &::after {
+                    content: " : ";
+                }
+            }
+        }
+    }
+
+    h3 {
+        display: inline;
+    }
+
+}
+@media (min-width: 1040px) {
+    .section-news {
+        padding: 60px 36px 20px;
+        max-width: 1040px;
+        margin: 0 auto;
+        box-sizing: border-box;
+
+        ol {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+    }
+}
+
