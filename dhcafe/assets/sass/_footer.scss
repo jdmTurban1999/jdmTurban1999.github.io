@@ -50,9 +50,9 @@
         display: inline-block;
         a {
             text-decoration: none;
-            color: #CAD0D2;
+            color: #fbfaf5;
             :visited {
-                color: #CAD0D2;
+                color: #fbfaf5;
             }
         }
     }
@@ -73,6 +73,7 @@
     .copyright {
         color: #fff;
     }
+   
 }
 @media (min-width: 1040px) {
     .footer {
@@ -120,4 +121,29 @@
 
     }
     
+}
+
+/* return to top */
+#scroll-top {
+    background-color: #eba314;
+    opacity: 1;
+    bottom: 20px;
+    padding: 16px;
+    position: fixed;
+    right: 20px;
+    a {
+        text-decoration: none;
+        color: #333;
+        font-size: 2.4rem;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        vertical-align: middle;
+    }
+    a:hover {
+        opacity: 1;
+    }
+    a:visited {
+        color: #333;
+    }
 }

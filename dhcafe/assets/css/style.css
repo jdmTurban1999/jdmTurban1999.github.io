@@ -418,11 +418,11 @@
 
 .footer__site-map li a {
   text-decoration: none;
-  color: #CAD0D2;
+  color: #fbfaf5;
 }
 
 .footer__site-map li a :visited {
-  color: #CAD0D2;
+  color: #fbfaf5;
 }
 
 .footer__sns-links {
@@ -480,5 +480,33 @@
     display: block;
     text-align: center;
   }
+}
+
+/* return to top */
+#scroll-top {
+  background-color: #eba314;
+  opacity: 1;
+  bottom: 20px;
+  padding: 16px;
+  position: fixed;
+  right: 20px;
+}
+
+#scroll-top a {
+  text-decoration: none;
+  color: #333;
+  font-size: 2.4rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#scroll-top a:hover {
+  opacity: 1;
+}
+
+#scroll-top a:visited {
+  color: #333;
 }
 /*# sourceMappingURL=style.css.map */
