@@ -368,12 +368,39 @@
 }
 
 .footer {
-  min-height: 228px;
+  min-height: 360px;
   /*最低限の高さ*/
-  background-color: #888;
-  padding-top: 46px;
-  padding-bottom: 20px;
   font-weight: 600;
+  background-image: url(../images/common/cafe-from-outdoor.jpg);
+  position: relative;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__gradient {
+  height: 360px;
+  background: linear-gradient(0deg, #e725018f, #eba3148f);
+  background-size: 400% 400%;
+  animation: AnimationName 16s ease infinite;
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 51% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.footer__container {
+  padding-top: 48px;
 }
 
 .footer__site-map {
