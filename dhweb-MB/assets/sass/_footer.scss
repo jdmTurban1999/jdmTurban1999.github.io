@@ -1,0 +1,99 @@
+.footer {
+    width: 100%;
+    min-width: 480px;
+
+    .footer_subscribe {
+        min-height: 390px;
+        background-color: #ccc;
+        text-align: center;
+
+        h3 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            padding-top: 32px;
+            padding-bottom: 40px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+            font-weight: 500;
+            color:#333;
+            width: 100%;
+            height: 108px;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4.2rem;
+        }
+
+        .subscribe-inputbox {
+            display: flex;
+            justify-content: center;
+        }
+
+        input {
+            width: 240px;
+            height: 56px;
+            border: none;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .send-btn {
+            width: 48px;
+            padding: 11px 26px;
+            background-color: #FF710A;
+            color: #fff;
+            font-size: 2.4rem;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 0 8px 8px 0;
+            text-align: center;
+        }
+
+    }
+
+
+}
+
+.footer_navigation {
+    margin-top: 48px;
+    height: 200px;
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    color: #fff;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                padding: 0 40px;
+
+                img {
+                    width: 40px;
+                    height: auto;
+                }
+                
+            }
+        }
+    }
+
+    .copyright {
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding-top: 56px;
+        padding-bottom: 42px;
+    }
+
+}
