@@ -1,0 +1,365 @@
+/* section-top */
+.section-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__topsection {
+        text-align: center;
+
+        img {
+            width: 100%;
+            max-width: 360px;
+            height: auto;
+            margin-bottom: 72px;
+        }
+
+        .upper-text {
+            font-size: 3.2rem;
+            font-weight: 900;
+            margin-bottom: 64px;
+            line-height: 4rem;
+            text-align: left;
+        }
+
+        .lower-text {
+            font-size: 2.4rem;
+            font-weight: 900;
+            
+        }
+
+    }
+
+    &__catchtext {
+        font-family: "Noto Sans JP";
+    }
+
+    // &_mainimage {
+    //     height: 266px;
+    //     width: 100%;
+    //     max-width: 400px;
+    //     background-image: url(../images/main_image.png);
+    //     background-position: center;
+    //     background-size: auto 100%;
+    //     background-repeat: no-repeat;
+    // }
+
+
+}
+
+/* section-dhu */
+.section-dhu {
+    width: 100%;
+    padding-top: 88px;
+    text-align: center;
+    margin-bottom: 72px;
+
+    .title h2 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .title h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .image {
+        margin-bottom: 64px;
+    }
+
+    .image img {
+        width: 100%;
+        max-width: 240px;
+        height: auto;
+    }
+
+    .description {
+        margin: 0 auto;
+        height: 20rem;
+        width: 35.4rem;
+
+        p {
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+            text-align: left;
+        }
+    }
+}
+
+/* section-web */
+.section-web {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 72px;
+
+    .title h2 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .title h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .image {
+        margin-bottom: 64px;
+    }
+
+    .image img {
+        width: 100%;
+        max-width: 240px;
+        height: auto;
+    }
+
+    .description {
+        margin: 0 auto;
+        height: 20rem;
+        width: 35.4rem;
+
+        p {
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+            text-align: left;
+        }
+    }
+}
+
+/* section-languages */
+.section-languages {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 72px;
+
+    h3 {
+        font-size: 2.4rem;
+        margin-bottom: 3.6rem;
+
+        span {
+            font-size: 1.6rem;
+        }
+    }
+
+    .languages-box {
+        display: flex;
+        justify-content:flex-end;
+        flex-flow: column;
+
+        img {
+            width: 100%;
+            max-width: 208px;
+            height: auto;
+        }
+
+        p {
+            font-size: 3.2rem;
+            margin-top: 1.8rem;
+        }
+
+        .sub-box {
+            margin-bottom: 42px;
+        }
+
+    }
+}
+
+/* section-courses */
+.section-courses {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 72px;
+
+    h3 {
+        font-size: 2.4rem;
+        margin-bottom: 3.6rem;
+
+        span {
+            font-size: 1.6rem;
+        }
+    }
+
+    .courses-box {
+        display: flex;
+        justify-content:flex-end;
+        flex-flow: column;
+        align-items: center;
+
+        .sub-box {
+            max-width: 320px;
+            margin-bottom: 4rem;
+        }
+
+        .sub-box img {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            margin-bottom: 32px;
+
+        }
+
+        h4 {
+            font-size: 2.4rem;
+            color: #FF710A;
+            font-weight: 700;
+            margin-bottom: 2.4rem;
+
+            span {
+                font-size: 1.6rem;
+            }
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+            text-align: left;
+        }
+
+      
+
+    }
+}
+
+/* section-teachers */
+.section-teachers {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 72px;
+
+    h3 {
+        font-size: 2.4rem;
+        margin-bottom: 3.6rem;
+
+        span {
+            font-size: 1.6rem;
+        }
+    }
+
+    .teacher-box {
+        display: flex;
+        justify-content:flex-end;
+        flex-flow: column;
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    
+    img {
+        width: 100%;
+        max-width: 325px;
+        height: auto;
+    }
+
+    h4 {
+        font-size: 3.2rem;
+        font-weight: 500;
+        margin-top: 2.4rem;
+        text-align: left;
+        margin-bottom: 1.2rem;
+    }
+
+    h5 {
+        font-size: 2.4rem;
+        font-weight: 400;
+        text-align: left;
+        color: #FF710A;
+        margin-bottom: 1.8rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+        text-align: left;
+        line-height: 2;
+        min-height: 200px;
+    }
+    .sub-box {
+        margin-bottom: 42px;
+    }
+}
+
+/* section-graduates */
+.section-graduates {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 72px;
+
+    h3 {
+        font-size: 2.4rem;
+        margin-bottom: 3.6rem;
+
+        span {
+            font-size: 1.6rem;
+        }
+    }
+
+    .graduates-box {
+        display: flex;
+        justify-content:flex-end;
+        flex-flow: column;
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    
+    img {
+        width: 100%;
+        max-width: 325px;
+        height: auto;
+    }
+
+    h4 {
+        font-size: 2.4rem;
+        font-weight: 500;
+        margin-top: 2.4rem;
+        margin-bottom: 2.4rem;
+        text-align: left;
+        margin-bottom: 1.2rem;
+        line-height: 2;
+    }
+
+    p {
+        font-size: 1.6rem;
+        text-align: left;
+        line-height: 2;
+        min-height: 272px;
+    }
+
+    .graduate-wada {
+        margin-bottom: 40px;
+    }
+}
+
+/* section-location */
+.section-location {
+    margin-bottom: 104px;
+
+    .location-text {
+        text-align: center;
+        width: 336px;
+        margin-left: auto;
+        margin-right: auto;
+
+        h3 {
+            font-size: 2.4rem;
+            margin-bottom: 0.8rem;
+    
+            span {
+                font-size: 1.6rem;
+            }
+        }
+
+        h4 {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            margin-bottom: 2.4rem;
+            width: 100%;
+
+        }
+
+    }
+}

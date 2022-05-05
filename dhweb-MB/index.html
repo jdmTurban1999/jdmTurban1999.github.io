@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHU Web Promotion Site</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="header-topicon"></div>
+        <span class="open-btn invisible-btn" onclick="openNav()"><i class="fas fa-bars"></i></span>
+        <nav class="overlay" id="myNav">
+            <a class="close-btn" onclick="closeNav()">&times;</a>
+            <ul class="overlay-content">
+                <li><a href="#aboutDHU">デジタルハリウッド大学について</a></li>
+                <li><a href="#aboutlanguages">学べる言語について</a></li>
+                <li><a href="#aboutcourses">代表的な授業</a></li>
+                <li><a href="#aboutteachers">講師紹介</a></li>
+                <li><a href="#aboutgraduates">卒業生の声</a></li>
+                <li><a href="#aboutlocation">所在地</a></li>
+                <li><a href="https://www.dhw.ac.jp/" target="_blank">DHU公式サイト</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section-top">
+            <div class="section-top__topsection">
+                <h1 class="upper-text">デジハリで<br>Web勉強しようぜ&#33&#33</h1>
+                <img src="assets/images/main_image.png" alt="Top image" class="top-image">
+                <h2 class="lower-text">Let's Study Web at DHU&#33&#33</h2>
+                <!-- <div class="section-top__catchtext">
+                    <h1 class="upper-text">デジハリでWeb勉強しようぜ&#33&#33</h1>
+                    <h2 class="lower-text">Let's Study Web at DHU&#33&#33</h2>
+                </div> -->
+            </div>
+        </section>
+        <div class="container">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+          </div>
+          <section class="section-dhu">
+            <div class="image"><img src="assets/images/undraw_education.svg" alt="student svg"></div>
+            <div class="text">
+                <div class="title" id="aboutDHU">
+                    <h2>デジタルハリウッド大学について</h2>
+                    <h3>About Digital Hollywood University</h3>
+                </div>
+                <div class="description">
+                    <p>デジタルハリウッド大学ではデジタルコミュニケーション学部デジタルコンテンツ学科と一学部一学科の中で様々な専門領域（3DCG、ゲーム・プログラミング、映像、グラフィック、アニメ、Web、ビジネス、メディアアート等）から横断して学ぶことが出来ます。</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-web" id="aboutweb">
+            <div class="image"><img src="assets/images/undraw_web_development.svg" alt="web development svg"></div>
+            <div class="text">
+                <div class="title">
+                    <h2>Web分野について</h2>
+                    <h3>About Web Field </h3>
+                </div>
+                <div class="description">
+                    <p>デジタルハリウッド大学ではデジタルコミュニケーション学部デジタルコンテンツ学科と一学部一学科の中で様々な専門領域（3DCG、ゲーム・プログラミング、映像、グラフィック、アニメ、Web、ビジネス、メディアアート等）から横断して学ぶことが出来ます。</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-languages" id="aboutlanguages">
+            <h3>学べる言語 <span>Languages</span></h3>
+            <div class="languages-box">
+                <div class="html5-box sub-box">
+                    <img src="assets/images/html.png" alt="HTML5">
+                    <p>HTML5</p>
+                </div>
+                <div class="css3-box sub-box">
+                    <img src="assets/images/css.png" alt="CSS3">
+                    <p>CSS3</p>
+                </div>
+                <div class="javascript-box sub-box">
+                    <img src="assets/images/java-script.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-courses" id="aboutcourses">
+            <h3>代表的な授業 <span>Main Courses</span></h3>
+            <div class="courses-box">
+                <div class="sub-box">
+                    <img src="assets/images/undraw_wireframing.svg" alt="web wireframing svg">
+                    <h4 class="course-title">Webサイトプロトタイプ演習</h4>
+                    <p>サイトマップ、ワイヤーフレーム、プロトタイプの制作は、Webサイト制作において大変重要です。実際に完成させたサイトを手戻りなくするため、Webサイト構築を行なう上で重要となる「設計フェーズ」の理解を深め、精度の高いワイヤーフレームやプロトタイプを出来るようにします。また、プロトタイピングツールを利用した効率の良いプロトタイピング作成手法を理解し、スムーズなWebサイト制作ができる技術を学びます。</p>
+                </div>
+                <div class="sub-box">
+                    <img src="assets/images/undraw_pair_programming.svg" alt="web programming svg">
+                    <h4 class="course-title">Webサイト制作実践演習</h4>
+                    <p>デザインカンプなどを元にコーディング計画を立て、Webサイトの文書構造をイメージし、それを形にするためのHTML、CSSマークアップを繰り返し行なうことで、実務レベルでのWebコーディング手法を理解していきます。さらにアクセシビリティの考え方、レスポンシブWebデザイン、CSSフレームワーク、コーディング効率化を学び、高精度のWebコーディングスキルを習得していきます。</p>
+                </div>
+                <div class="sub-box">
+                    <img src="assets/images/undraw_usability_testing.svg" alt="web seminar svg">
+                    <h4 class="course-title">コンテンツデザインゼミ</h4>
+                    <p>デザインと技術とユーモアを複合的に考え、問題解決のためのアプローチ方法の探求、社会との関係を築くモノ創り、インターネットを活用して自分や自分たちの周りを少し豊かにする方法を考えるといった活動を行っていきます。ゼミで様々な活動やコミュニケーションを行っていく中で、個別に自らが実現したい卒業制作のテーマを設定し、卒業制作を行っていきます。</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="section-teachers" id="aboutteachers">
+            <h3>講師紹介 <span>Teachers</span></h3>
+            <div class="teacher-box">
+                <div class="teacher-kuriya_box sub-box">
+                    <img src="assets/images/teacher_kuriya_large.jpg" alt="Teacher Kuriya">
+                    <h4>栗谷幸助</h4>
+                    <h5>准教授</h5>
+                    <p>Webデザイン業界への夢先案内人</p>
+                </div>
+                <div class="teacher-komatsu_box sub-box">
+                    <img src="assets/images/teacher_komatsu_large.jpg" alt="Teacher Komatsu">
+                    <h4>小松 学史</h4>
+                    <h5>准教授</h5>
+                    <p>WebサイトフロントエンドエンジニアAdobe Flash認定インストラクター</p>
+                </div>
+                <div class="teacher-nakamura_box sub-box">
+                    <img src="assets/images/teacher_yuki_nakamura_large.jpg" alt="Teacher Nakamura">
+                    <h4>中村勇樹</h4>
+                    <h5>非常勤講師</h5>
+                    <p>「技術であそぶ」がコンセプト。デザイナー出身のフロントエンドエンジニア</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-graduates" id="aboutgraduates">
+            <h3>卒業生の声 <span>Graduates</span></h3>
+            <div class="graduates-box">
+                <div class="graduate-wada">
+                    <div class="graduate-image"><img src="assets/images/undraw_site_content_male.svg" alt="male graduate svg"></div>
+                    <div class="graduate-text">
+                        <h4>和田 泰弘さん | 株式会社サイバーエージェント</h4>
+                        <p>自分で事業をつくりたいという想いからDHUに入学。Webをイチから学び、在学中から、フリーのWebデザイナーになり、作ったサイトの数は100を越えました。サイバーエージェントへの就職も決まりました。就職先にも応援してもらいながら、撮影機材のシェアリングサービスを在学中に起業することもできました。</p>
+                    </div>
+                </div>
+                <div class="graduate-takayanagi">
+                    <div class="graduate-image"><img src="assets/images/undraw_notebook_female.svg" alt="female graduate svg"></div>
+                    <div class="graduate-text">
+                        <h4>髙栁 綾 さん | 株式会社ヤフー</h4>
+                        <p>Webやグラフィックデザイン、英語の授業に夢中になりました。3年の夏に、ヤフー、ネクスト、広告代理店の3社のインターンシップに参加。実践力がつき、就職用のポートフォリオも充実しました。ヤフーでは、提案した企画が高評価をいただき、社員の方と話すうちに「この会社に入りたい！」という気持ちに。</p>
+                    </div>
+                </div>          
+            </div>
+        </section>
+        <section class="section-location" id="aboutlocation">
+            <div class="location-text">
+                <h3>所在地 <span>Location</span></h3>
+                <h4>〒101-0062 東京都千代田区神田駿河台４−６ 御茶ノ水ソラシティアカデミア 3F/4F</h4>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.1186135207845!2d139.76413021502267!3d35.69869863662158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c1d6fb43a83%3A0x4309d3ce448a7a27!2z44OH44K444K_44Or44OP44Oq44Km44OD44OJ5aSn5a2m!5e0!3m2!1sja!2sjp!4v1621862553490!5m2!1sja!2sjp" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_subscribe">
+            <div class="subscribe-text">
+                <h3>資料請求はこちら</h3>
+                <p>デジタルハリウッド大学についての資料をご自宅まで<br>お送り致します。</p>
+            </div>
+            <div class="subscribe-inputbox">
+                <input type="email" name="mail" id="subscribe" placeholder="メールアドレス">
+                <a href="#" class="send-btn">送信</a>
+            </div>
+        </div>
+        <div class="footer_navigation">
+            <ul>
+                <li><a href="https://www.youtube.com/user/dhwtv"><img src="assets/images/youtube.png" alt="YouTube"></a></li>
+                <li><a href="https://twitter.com/DHUniv"><img src="assets/images/twitter.png" alt="Twitter"></a></li>
+                <li><a href="https://www.facebook.com/dhuniv"><img src="assets/images/facebook.png" alt="Facebook"></a></li>
+            </ul>
+            <p class="copyright"><small>&copy;2021 Digital Hollywood University</small></p>
+        </div>
+    </footer>
+    <p id="scroll-top"><a href="#">&uarr;</a></p>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/js/common.js"></script>
+</html>
