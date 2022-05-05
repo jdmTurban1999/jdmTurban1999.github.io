@@ -30,3 +30,15 @@ $(function() {
       $(".fadeOut").hide(300);
     });
 });
+
+$('#slick-slide').slick({
+	autoplay: true,
+	autoplaySpeed: 3000,
+	dots: true,
+	arrows: false,
+    fade: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
+    waitForAnimate: false
+});
