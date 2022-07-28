@@ -1,0 +1,149 @@
+.footer {
+    min-height: 360px;/*最低限の高さ*/
+    font-weight: 600;
+    background-image: url(../images/common/cafe-from-outdoor.jpg);
+    position: relative;
+	height: 100%;
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+    &__gradient {
+        height: 360px;
+        background: linear-gradient(0deg, #e725018f, #eba3148f);
+        background-size: 400% 400%;
+        -webkit-animation: AnimationName 16s ease infinite;
+        -moz-animation: AnimationName 16s ease infinite;
+        animation: AnimationName 16s ease infinite;
+    }
+    @-webkit-keyframes AnimationName {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+
+    &__container {
+        padding-top: 48px;
+    }
+
+    &__site-map {
+        margin-bottom: 30px;
+        h2{
+            display: none;
+        }
+
+    }
+
+    &__site-map li {
+        margin: 0 10px;
+        display: inline-block;
+        a {
+            text-decoration: none;
+            color: #fbfaf5;
+            :visited {
+                color: #fbfaf5;
+            }
+        }
+    }
+
+    &__sns-links {
+        margin-bottom: 80px;
+
+        li {
+            display: inline-block;
+            width: 20px;
+            margin: 0 10px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .copyright {
+        color: #fff;
+    }
+   
+}
+@media (min-width: 1040px) {
+    .footer {
+        margin: 0;
+        padding: 0;
+
+        &__container {
+            max-width: 1040px;
+            margin: 0 auto;
+            padding-top: 40px;
+            text-align: left;
+        }
+
+        &__site-map {
+            float: left;
+            h2{
+                display: inline-block;
+                width: 120px;
+                vertical-align: top;/*縦上方向の揃え*/
+                color: #fff;
+            }
+            ul {
+                display: inline-block;
+                margin-left: 10px;
+                li {
+                    margin: 0;
+                    display: block;
+                }
+            }
+
+
+        }
+
+        &__sns-links {
+            float: right;
+        }
+
+        .copyright {
+           small {
+            clear: both;
+            display: block;
+            text-align: center;
+            } 
+        }
+
+    }
+    
+}
+
+/* return to top */
+#scroll-top {
+    background-color: #eba314;
+    opacity: 1;
+    bottom: 20px;
+    padding: 16px;
+    position: fixed;
+    right: 20px;
+    a {
+        text-decoration: none;
+        color: #333;
+        font-size: 2.4rem;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        vertical-align: middle;
+    }
+    a:hover {
+        opacity: 1;
+    }
+    a:visited {
+        color: #333;
+    }
+}

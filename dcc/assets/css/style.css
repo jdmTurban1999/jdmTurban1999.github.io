@@ -1,1 +1,512 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+.header {
+  height: 44px;
+  background-color: #ffffff;
+  position: relative;
+  /*親要素の指定*/
+}
+
+.header h1 {
+  font-size: 1.3rem;
+  color: #fa6980;
+  position: absolute;
+  /*絶対座標でここに指定するという指示*/
+  left: 24px;
+  top: 10px;
+}
+
+.header__navigation {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  /*ハンバーガーメニュー*/
+  #nav-drawer {
+    padding: 10px 24px 0 0;
+    text-align: right;
+    position: relative;
+  }
+  #nav-open {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 22px;
+  }
+  #nav-open span, #nav-open span::before, #nav-open span::after {
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    background-color: #777;
+    display: block;
+    content: "";
+  }
+  #nav-open span::before {
+    bottom: -8px;
+  }
+  #nav-open span::after {
+    bottom: -16px;
+  }
+  #nav-close {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+  }
+  #nav-content {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    text-align: left;
+    padding: 15px 0 0 24px;
+    transform: translateX(-105%);
+    transition: 0.3s ease-in-out;
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.25);
+  }
+  .nav-drawer__title {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fa6980;
+    margin-bottom: 46px;
+  }
+  .nav-drawer__link-top {
+    display: block;
+  }
+  #nav-content ul li {
+    margin-bottom: 36px;
+  }
+  #nav-content ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #333;
+  }
+  #nav-input:checked ~ #nav-close {
+    display: block;
+  }
+  #nav-input:checked ~ #nav-content {
+    transform: translateX(0%);
+  }
+}
+
+@media (min-width: 480px) {
+  .header {
+    max-width: 1040px;
+    margin: 0 auto;
+    min-height: 50px;
+    padding: 14px;
+    box-sizing: border-box;
+    /*幅の指定がしやすい*/
+  }
+  .header h1 {
+    font-size: 2rem;
+    top: 14px;
+  }
+  .header__navigation {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+  }
+  .header__navigation ul li {
+    display: inline-block;
+    margin-left: 40px;
+  }
+  .header__navigation ul li a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+.main {
+  background-color: #f6f8f9;
+}
+
+@media (min-width: 1040px) {
+  main {
+    padding-bottom: 120px;
+  }
+}
+
+.section-top {
+  margin-bottom: 60px;
+}
+
+.section-top__image {
+  height: 338px;
+  background-image: url("../images/top/top_image.jpg");
+  background-position: center;
+  background-size: auto 100%;
+  /*左右は自動、高さは100%*/
+  background-repeat: no-repeat;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-top__title-ja {
+  font-size: 1.6rem;
+  position: absolute;
+  width: 100%;
+  top: 18px;
+}
+
+.section-top__title-en {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+}
+
+.section-top__lead {
+  margin: 0 24px;
+}
+
+@media (min-width: 480px) {
+  .section-top__image {
+    height: 600px;
+    margin-bottom: 80px;
+  }
+  .section-top__title-ja {
+    font-size: 3.2rem;
+    position: static;
+    /*position: absoluteの解除*/
+    max-width: 1040px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 60px 0 0 24px;
+  }
+  .section-top__title-en {
+    font-size: 2rem;
+    position: static;
+    /*position: absoluteの解除*/
+    max-width: 1040px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 25px 0 0 24px;
+  }
+  .section-top__lead {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 4rem;
+  }
+}
+
+.section-menu {
+  margin-bottom: 80px;
+}
+
+.section-menu__title {
+  margin-bottom: 40px;
+}
+
+.section-menu ul {
+  margin: 0 24px;
+  list-style: none;
+}
+
+.section-menu ul li {
+  max-width: 327px;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 40px;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.section-menu__item-picture {
+  width: 100%;
+  height: 186px;
+  object-fit: cover;
+  /*↑置換コンテンツはアスペクト比を維持したまま、要素のコンテンツボックス全体を埋めるように拡大縮小されます。オブジェクトのアスペクト比がボックスのアスペクト比と合わない場合は、オブジェクトの方が合うように切り取られます。*/
+  object-position: 0 0;
+  /*一番上の一番左から指定。*/
+  border-radius: 6px 6px 0 0;
+}
+
+.section-menu__item-title {
+  padding: 14px 20px;
+}
+
+.section-menu__item-description {
+  padding: 0 20px 20px 20px;
+}
+
+.section-menu__item-description span {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1040px) {
+  .section-menu {
+    margin-bottom: 20px;
+  }
+  .section-menu ul {
+    max-width: 1040px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .section-menu ul li {
+    display: inline-block;
+    width: 320px;
+    /* 320×3=960px */
+    margin-right: 40px;
+  }
+  .section-menu ul li:last-child {
+    margin-right: 0;
+  }
+}
+
+.section-access {
+  padding-top: 40px;
+  background-color: #fff;
+  margin-bottom: 60px;
+}
+
+.section-access__title {
+  margin-bottom: 40px;
+}
+
+.section-access address {
+  font-style: normal;
+  margin-bottom: 40px;
+}
+
+.section-access__break:after {
+  content: "\A";
+  white-space: pre;
+}
+
+.section-access__map {
+  height: 330px;
+}
+
+.section-access__map iframe {
+  width: 100%;
+  height: 100%;
+  border: solid 1px #333333;
+}
+
+@media (min-width: 1040px) {
+  .section-access {
+    padding: 60px 36px;
+    margin: 0 auto 60px;
+    max-width: 1040px;
+    box-sizing: border-box;
+  }
+  .section-access__title {
+    padding-bottom: 40px;
+    border-bottom: solid 1px #333;
+    margin-bottom: 30px;
+  }
+  .section-access address {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+  .section-access__break:after {
+    content: "";
+  }
+  .section-access__map {
+    max-width: 840px;
+    margin: 0 auto;
+    height: 340px;
+  }
+}
+
+.section-news {
+  background-color: #fff;
+  padding: 40px 24px 0;
+}
+
+.section-news__title {
+  padding-bottom: 40px;
+  border-bottom: solid 1px #333333;
+  margin-bottom: 40px;
+}
+
+.section-news ol {
+  list-style-type: none;
+}
+
+.section-news ol li {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.section-news ol li time {
+  font-weight: 600;
+}
+
+.section-news ol li time::after {
+  content: " : ";
+}
+
+.section-news h3 {
+  display: inline;
+}
+
+@media (min-width: 1040px) {
+  .section-news {
+    padding: 60px 36px 20px;
+    max-width: 1040px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .section-news ol {
+    max-width: 840px;
+    margin: 0 auto;
+  }
+}
+
+.footer {
+  min-height: 360px;
+  /*最低限の高さ*/
+  font-weight: 600;
+  background-image: url(../images/common/cafe-from-outdoor.jpg);
+  position: relative;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__gradient {
+  height: 360px;
+  background: linear-gradient(0deg, #e725018f, #eba3148f);
+  background-size: 400% 400%;
+  animation: AnimationName 16s ease infinite;
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 51% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.footer__container {
+  padding-top: 48px;
+}
+
+.footer__site-map {
+  margin-bottom: 30px;
+}
+
+.footer__site-map h2 {
+  display: none;
+}
+
+.footer__site-map li {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.footer__site-map li a {
+  text-decoration: none;
+  color: #fbfaf5;
+}
+
+.footer__site-map li a :visited {
+  color: #fbfaf5;
+}
+
+.footer__sns-links {
+  margin-bottom: 80px;
+}
+
+.footer__sns-links li {
+  display: inline-block;
+  width: 20px;
+  margin: 0 10px;
+}
+
+.footer__sns-links li img {
+  width: 100%;
+}
+
+.footer .copyright {
+  color: #fff;
+}
+
+@media (min-width: 1040px) {
+  .footer {
+    margin: 0;
+    padding: 0;
+  }
+  .footer__container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: left;
+  }
+  .footer__site-map {
+    float: left;
+  }
+  .footer__site-map h2 {
+    display: inline-block;
+    width: 120px;
+    vertical-align: top;
+    /*縦上方向の揃え*/
+    color: #fff;
+  }
+  .footer__site-map ul {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .footer__site-map ul li {
+    margin: 0;
+    display: block;
+  }
+  .footer__sns-links {
+    float: right;
+  }
+  .footer .copyright small {
+    clear: both;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* return to top */
+#scroll-top {
+  background-color: #eba314;
+  opacity: 1;
+  bottom: 20px;
+  padding: 16px;
+  position: fixed;
+  right: 20px;
+}
+
+#scroll-top a {
+  text-decoration: none;
+  color: #333;
+  font-size: 2.4rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#scroll-top a:hover {
+  opacity: 1;
+}
+
+#scroll-top a:visited {
+  color: #333;
+}
+/*# sourceMappingURL=style.css.map */

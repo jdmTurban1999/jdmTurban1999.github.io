@@ -1,0 +1,134 @@
+.header {
+    height: 44px;
+    background-color: #ffffff;
+    position: relative;/*親要素の指定*/
+
+    h1 {
+        font-size: 1.3rem;
+        color: #fa6980;
+        position: absolute;/*絶対座標でここに指定するという指示*/
+        left: 24px;
+        top: 10px;
+    }
+
+    &__navigation {
+       display: none; 
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    /*ハンバーガーメニュー*/
+    #nav-drawer {
+        padding: 10px 24px 0 0;
+        text-align: right;
+        position: relative;
+    }
+    #nav-open {
+        display: inline-block;
+        vertical-align: middle;
+        width: 25px;
+        height: 22px;
+    }
+    #nav-open span, #nav-open span::before, #nav-open span::after {
+        position: absolute;
+        height: 3px;
+        width: 25px;
+        background-color: #777;
+        display: block;
+        content: "";
+    }
+    #nav-open span::before {
+        bottom: -8px;
+    }
+    #nav-open span::after {
+        bottom: -16px;
+    }
+    #nav-close {
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 0.5;
+    }
+    #nav-content {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 70%;
+        height: 100%;
+        background-color: #fff;
+        text-align: left;
+        padding: 15px 0 0 24px;
+        transform: translateX(-105%);
+        transition: 0.3s ease-in-out;
+        box-shadow: 5px 0 25px rgba(0, 0, 0, 0.25);
+    }
+    .nav-drawer__title {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #fa6980;
+        margin-bottom: 46px;
+    }
+    .nav-drawer__link-top {
+        display: block;
+    }
+    #nav-content ul li {
+        margin-bottom: 36px;
+    }
+    #nav-content ul li a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #333;
+    }
+    #nav-input:checked ~ #nav-close {
+        display: block;
+    }
+    #nav-input:checked ~ #nav-content {
+        transform: translateX(0%);
+    }
+
+
+}
+
+@media (min-width: 480px) {
+    .header {
+        max-width: 1040px;
+        margin: 0 auto;
+        min-height: 50px;
+        padding: 14px;
+        box-sizing: border-box;/*幅の指定がしやすい*/
+
+        h1 {
+            font-size: 2rem;
+            top: 14px;
+        }
+
+        &__navigation {
+            display: block;
+            text-align: right;
+            text-decoration: none;
+
+            ul li {
+                display: inline-block;
+                margin-left: 40px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: #333;
+                }
+            }
+        }
+    }
+
+}

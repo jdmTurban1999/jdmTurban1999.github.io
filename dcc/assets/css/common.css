@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*講義メモ*/
+/*ボックスモデルをちゃんと理解しているとスタイリングがスムーズに出来る*/
+/*ボックスサイジングについて↓
+box-sizing: border-box; ⇒　borderのところまで合わせた幅や高さの指定。Web制作の上でこれが良く指定される。
+            content-box;　⇒　content（コンテンツ）、内容に対して幅や高さを決める。
+*/
+/**/
+html {
+  font-size: 62.5%;
+  /* 16px × 62.5% = 10px 基準のサイズをhtmlで指定してしまう。*/
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  font-weight: 500;
+  font-size: 1.6em;
+  /*要は16px。親要素に対してどれだけか*/
+  line-height: 2.4rem;
+  /*htmlで指定されている値の2.4倍=要は24px。トップの要素に対してどれだけか*/
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2.4rem;
+}
+
+a:hover {
+  /*疑似クラスは、疑似的に何かを生成する*/
+  opacity: 0.5;
+}
+
+.none {
+  display: none;
+}
+/*# sourceMappingURL=common.css.map */
