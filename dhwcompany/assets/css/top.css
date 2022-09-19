@@ -25,6 +25,7 @@
     color: #fff;
     font-weight: 600;
     width: 100%;/*flex-wrapをかましている*/
+    z-index: 999;
 }
 
 .section-top__image-message h2 {
