@@ -469,7 +469,7 @@
     .teacher-box {
         display: flex;
         /* justify-content: center; */
-        justify-content: space-between;
+        justify-content: space-evenly;
 
         @media screen and (max-width:991px) {
             font-size: 1.6rem;

@@ -1,5 +1,5 @@
-@import "header";
+@forward 'header';
 
-@import "main";
+@forward 'main';
 
-@import "footer";
+@forward 'footer';

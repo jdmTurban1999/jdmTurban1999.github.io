@@ -1,6 +1,5 @@
 html {
-  font-size: 62.5%;
-  /* 16px * 62.5% = 10px */
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
   width: 100%;
   box-sizing: border-box;
 }
@@ -19,8 +18,8 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #ff4f07;
-  background-color: #FF710ACC;
+  background-color: rgb(255, 79, 7);
+  background-color: rgba(255, 113, 10, 0.8);
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -69,7 +68,6 @@ body {
     right: 35px;
   }
 }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -108,7 +106,6 @@ body {
     transform: translateY(40px) rotate(45deg);
   }
 }
-
 .GoogleMap {
   position: relative;
   width: 100%;
@@ -140,5 +137,4 @@ body {
   color: #fff;
   font-weight: bold;
   font-size: 2.4rem;
-}
-/*# sourceMappingURL=common.css.map */
+}/*# sourceMappingURL=common.css.map */

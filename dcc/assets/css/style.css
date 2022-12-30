@@ -2,19 +2,15 @@
 .header {
   height: 44px;
   background-color: #ffffff;
-  position: relative;
-  /*親要素の指定*/
+  position: relative; /*親要素の指定*/
 }
-
 .header h1 {
   font-size: 1.3rem;
   color: #fa6980;
-  position: absolute;
-  /*絶対座標でここに指定するという指示*/
+  position: absolute; /*絶対座標でここに指定するという指示*/
   left: 24px;
   top: 10px;
 }
-
 .header__navigation {
   display: none;
 }
@@ -97,15 +93,13 @@
     transform: translateX(0%);
   }
 }
-
 @media (min-width: 480px) {
   .header {
     max-width: 1040px;
     margin: 0 auto;
     min-height: 50px;
     padding: 14px;
-    box-sizing: border-box;
-    /*幅の指定がしやすい*/
+    box-sizing: border-box; /*幅の指定がしやすい*/
   }
   .header h1 {
     font-size: 2rem;
@@ -127,7 +121,6 @@
     color: #333;
   }
 }
-
 .main {
   background-color: #f6f8f9;
 }
@@ -137,37 +130,31 @@
     padding-bottom: 120px;
   }
 }
-
 .section-top {
   margin-bottom: 60px;
 }
-
 .section-top__image {
   height: 338px;
   background-image: url("../images/top/top_image.jpg");
   background-position: center;
-  background-size: auto 100%;
-  /*左右は自動、高さは100%*/
+  background-size: auto 100%; /*左右は自動、高さは100%*/
   background-repeat: no-repeat;
   color: #fff;
   font-weight: 600;
   margin-bottom: 40px;
   position: relative;
 }
-
 .section-top__title-ja {
   font-size: 1.6rem;
   position: absolute;
   width: 100%;
   top: 18px;
 }
-
 .section-top__title-en {
   position: absolute;
   width: 100%;
   bottom: 10px;
 }
-
 .section-top__lead {
   margin: 0 24px;
 }
@@ -179,8 +166,7 @@
   }
   .section-top__title-ja {
     font-size: 3.2rem;
-    position: static;
-    /*position: absoluteの解除*/
+    position: static; /*position: absoluteの解除*/
     max-width: 1040px;
     margin: 0 auto;
     text-align: left;
@@ -188,8 +174,7 @@
   }
   .section-top__title-en {
     font-size: 2rem;
-    position: static;
-    /*position: absoluteの解除*/
+    position: static; /*position: absoluteの解除*/
     max-width: 1040px;
     margin: 0 auto;
     text-align: left;
@@ -201,20 +186,16 @@
     line-height: 4rem;
   }
 }
-
 .section-menu {
   margin-bottom: 80px;
 }
-
 .section-menu__title {
   margin-bottom: 40px;
 }
-
 .section-menu ul {
   margin: 0 24px;
   list-style: none;
 }
-
 .section-menu ul li {
   max-width: 327px;
   margin: 0 auto;
@@ -223,25 +204,20 @@
   border-radius: 6px;
   text-align: left;
 }
-
 .section-menu__item-picture {
   width: 100%;
   height: 186px;
   object-fit: cover;
   /*↑置換コンテンツはアスペクト比を維持したまま、要素のコンテンツボックス全体を埋めるように拡大縮小されます。オブジェクトのアスペクト比がボックスのアスペクト比と合わない場合は、オブジェクトの方が合うように切り取られます。*/
-  object-position: 0 0;
-  /*一番上の一番左から指定。*/
+  object-position: 0 0; /*一番上の一番左から指定。*/
   border-radius: 6px 6px 0 0;
 }
-
 .section-menu__item-title {
   padding: 14px 20px;
 }
-
 .section-menu__item-description {
   padding: 0 20px 20px 20px;
 }
-
 .section-menu__item-description span {
   font-size: 1.2rem;
 }
@@ -257,39 +233,32 @@
   }
   .section-menu ul li {
     display: inline-block;
-    width: 320px;
-    /* 320×3=960px */
+    width: 320px; /* 320×3=960px */
     margin-right: 40px;
   }
   .section-menu ul li:last-child {
     margin-right: 0;
   }
 }
-
 .section-access {
   padding-top: 40px;
   background-color: #fff;
   margin-bottom: 60px;
 }
-
 .section-access__title {
   margin-bottom: 40px;
 }
-
 .section-access address {
   font-style: normal;
   margin-bottom: 40px;
 }
-
 .section-access__break:after {
-  content: "\A";
+  content: "\a";
   white-space: pre;
 }
-
 .section-access__map {
   height: 330px;
 }
-
 .section-access__map iframe {
   width: 100%;
   height: 100%;
@@ -321,35 +290,28 @@
     height: 340px;
   }
 }
-
 .section-news {
   background-color: #fff;
   padding: 40px 24px 0;
 }
-
 .section-news__title {
   padding-bottom: 40px;
   border-bottom: solid 1px #333333;
   margin-bottom: 40px;
 }
-
 .section-news ol {
   list-style-type: none;
 }
-
 .section-news ol li {
   margin-bottom: 40px;
   text-align: left;
 }
-
 .section-news ol li time {
   font-weight: 600;
 }
-
 .section-news ol li time::after {
   content: " : ";
 }
-
 .section-news h3 {
   display: inline;
 }
@@ -366,10 +328,8 @@
     margin: 0 auto;
   }
 }
-
 .footer {
-  min-height: 360px;
-  /*最低限の高さ*/
+  min-height: 360px; /*最低限の高さ*/
   font-weight: 600;
   background-image: url(../images/common/cafe-from-outdoor.jpg);
   position: relative;
@@ -379,14 +339,36 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .footer__gradient {
   height: 360px;
-  background: linear-gradient(0deg, #e725018f, #eba3148f);
+  background: linear-gradient(0deg, rgba(231, 37, 1, 0.5607843137), rgba(235, 163, 20, 0.5607843137));
   background-size: 400% 400%;
+  -webkit-animation: AnimationName 16s ease infinite;
+  -moz-animation: AnimationName 16s ease infinite;
   animation: AnimationName 16s ease infinite;
 }
-
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 51% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 51% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
 @keyframes AnimationName {
   0% {
     background-position: 50% 0%;
@@ -398,47 +380,37 @@
     background-position: 50% 0%;
   }
 }
-
 .footer__container {
   padding-top: 48px;
 }
-
 .footer__site-map {
   margin-bottom: 30px;
 }
-
 .footer__site-map h2 {
   display: none;
 }
-
 .footer__site-map li {
   margin: 0 10px;
   display: inline-block;
 }
-
 .footer__site-map li a {
   text-decoration: none;
   color: #fbfaf5;
 }
-
 .footer__site-map li a :visited {
   color: #fbfaf5;
 }
-
 .footer__sns-links {
   margin-bottom: 80px;
 }
-
 .footer__sns-links li {
   display: inline-block;
   width: 20px;
   margin: 0 10px;
 }
-
 .footer__sns-links li img {
   width: 100%;
 }
-
 .footer .copyright {
   color: #fff;
 }
@@ -460,8 +432,7 @@
   .footer__site-map h2 {
     display: inline-block;
     width: 120px;
-    vertical-align: top;
-    /*縦上方向の揃え*/
+    vertical-align: top; /*縦上方向の揃え*/
     color: #fff;
   }
   .footer__site-map ul {
@@ -481,7 +452,6 @@
     text-align: center;
   }
 }
-
 /* return to top */
 #scroll-top {
   background-color: #eba314;
@@ -491,7 +461,6 @@
   position: fixed;
   right: 20px;
 }
-
 #scroll-top a {
   text-decoration: none;
   color: #333;
@@ -501,12 +470,9 @@
   text-align: center;
   vertical-align: middle;
 }
-
 #scroll-top a:hover {
   opacity: 1;
 }
-
 #scroll-top a:visited {
   color: #333;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
