@@ -346,13 +346,15 @@
     }
 
     .courses-box {
+        display: flex;
+        flex-wrap: wrap;
 
-        @media screen and (max-width:991px) {
-            display: flex;
-            justify-content:flex-end;
-            flex-flow: column;
-            align-items: center;
-        }
+        // @media screen and (max-width:991px) {
+        //     display: flex;
+        //     justify-content:flex-end;
+        //     flex-flow: column;
+        //     align-items: center;
+        // }
 
         .sub-box {
             display: flex;
@@ -419,7 +421,7 @@
         }
 
         p {
-            font-size: 2.4rem;
+            font-size: 2rem;
             line-height: 2;
             text-align: left;
 
@@ -467,9 +469,56 @@
     }
 
     .teacher-box {
-        display: flex;
-        /* justify-content: center; */
-        justify-content: space-evenly;
+        display: grid;
+        max-width: 1080px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 480px 200px;
+        column-gap: 24px;
+
+        // .teacher-kuriya_box {
+        //     grid-column: 1 / 2;
+        // }
+        // .teacher-komatsu_box {
+        //     grid-column: 2 / 3;
+        // }
+        // .teacher-nakamura_box {
+        //     grid-column: 3 / 4;
+        // }
+        
+        .img-box01 {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            background-image: url('../images/teacher_kuriya_large.jpg');
+            background-position: top center;
+            background-size: cover;
+        }
+        .text-box01 {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+        .img-box02 {
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+            background-image: url('../images/teacher_komatsu_large.jpg');
+            background-position: top center;
+            background-size: cover;
+        }
+        .text-box02 {
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+        .img-box03 {
+            grid-row: 1 / 2;
+            grid-column: 3 / 4;
+            background-image: url('../images/teacher_yuki_nakamura_large.jpg');
+            background-position: top center;
+            background-size: cover;
+        }
+        .text-box03 {
+            grid-row: 2 / 3;
+            grid-column: 3 / 4;
+        }
 
         @media screen and (max-width:991px) {
             font-size: 1.6rem;
@@ -509,9 +558,9 @@
         }
     
         p {
-            font-size: 2.4rem;
+            font-size: 2rem;
             text-align: left;
-            line-height: 2;
+            line-height: 1.5;
             
             @media screen and (max-width:991px) {
                 font-size: 1.6rem;
@@ -520,23 +569,6 @@
                 min-height: 200px;
             }
         }
-    }
-    
-    img {
-        width: 100%;
-        max-width: 32rem;
-        height: auto;
-
-        @media screen and (max-width:991px) {
-            width: 100%;
-            max-width: 325px;
-            height: auto;
-        }
-    }
-
-    .sub-box {
-        max-width: 36.2rem;
-        text-align: left;
     }
 
 }

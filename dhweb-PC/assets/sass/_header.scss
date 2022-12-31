@@ -1,23 +1,19 @@
 .header {
-    max-width: 1440px;
+    // width: 100%;
+    max-width: 1980px;
     margin: 0 auto;
     height: 128px;
+    padding: 10px;
     background-color: #FFF;
     margin-bottom: 86px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     &-topicon {
-        img {
-            width: 100%;
-            height: auto;
-            max-width: 560px;
-
-            @media screen and (max-width:991px) {
-                max-width: 480px;
-            }
-        }
+        background-image: url("../images/header_image.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: contain;
+        width: 100%;
+        height: 200px;
     }
     
     .open-btn {
