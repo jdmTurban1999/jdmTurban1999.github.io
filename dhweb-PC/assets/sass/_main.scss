@@ -446,7 +446,7 @@
     margin-bottom: 224px;
 
     @media screen and (max-width:991px) {
-        width: 100%;
+        // width: 100%;
         text-align: center;
         margin-bottom: 72px;
         
@@ -475,8 +475,14 @@
         max-width: 1080px;
         margin: 0 auto;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 480px 200px;
+        grid-template-rows: auto;
         column-gap: 24px;
+
+        @media screen and (max-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 3.2rem;
+        }
 
         // .teacher-kuriya_box {
         //     grid-column: 1 / 2;
@@ -620,7 +626,12 @@
     .graduates-box {
         display: flex;
         justify-content: center;
+        padding: 3.2rem;
+        column-gap: 4rem;
 
+        @media screen and (max-width:991px) {
+            flex-wrap: wrap;
+        }
     }
     
     img {
@@ -646,8 +657,9 @@
     }
 
     .graduate-wada {
-        margin-bottom: 40px;
-        margin-right: 12rem;
+        @media screen and (max-width:991px) {
+            margin-bottom: 5.6rem;
+        }
     }
 }
 

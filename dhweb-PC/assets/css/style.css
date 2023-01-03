@@ -429,7 +429,6 @@
 }
 @media screen and (max-width: 991px) {
   .section-teachers {
-    width: 100%;
     text-align: center;
     margin-bottom: 72px;
   }
@@ -457,8 +456,15 @@
   max-width: 1080px;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 480px 200px;
+  grid-template-rows: auto;
   column-gap: 24px;
+}
+@media screen and (max-width: 768px) {
+  .section-teachers .teacher-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3.2rem;
+  }
 }
 .section-teachers .teacher-box .img-box01 {
   grid-row: 1/2;
@@ -580,6 +586,13 @@
 .section-graduates .graduates-box {
   display: flex;
   justify-content: center;
+  padding: 3.2rem;
+  column-gap: 4rem;
+}
+@media screen and (max-width: 991px) {
+  .section-graduates .graduates-box {
+    flex-wrap: wrap;
+  }
 }
 .section-graduates img {
   width: 100%;
@@ -600,9 +613,10 @@
   text-align: left;
   line-height: 2;
 }
-.section-graduates .graduate-wada {
-  margin-bottom: 40px;
-  margin-right: 12rem;
+@media screen and (max-width: 991px) {
+  .section-graduates .graduate-wada {
+    margin-bottom: 5.6rem;
+  }
 }
 
 /* section-location */
@@ -723,8 +737,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   color: #fff;
-  padding: 0 160px;
 }
 .footer_navigation ul {
   display: flex;
