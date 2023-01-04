@@ -5,6 +5,11 @@
   background-color: #FFF;
   margin-bottom: 86px;
 }
+@media screen and (max-width: 991px) {
+  .header {
+    margin-bottom: 0;
+  }
+}
 .header-topicon img {
   width: 100%;
   max-width: 35%;
@@ -63,6 +68,8 @@
 @media screen and (max-width: 991px) {
   .section-top__topsection img {
     max-width: 480px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 }
 .section-top__topsection .upper-text {
@@ -79,6 +86,7 @@
     margin-bottom: 64px;
     line-height: 4rem;
     text-align: left;
+    margin-bottom: 4rem;
   }
 }
 .section-top__topsection .lower-text {
@@ -95,6 +103,11 @@
   font-family: "Noto Sans JP";
   margin-top: 6.4rem;
 }
+@media screen and (max-width: 991px) {
+  .section-top__catchtext {
+    margin-top: 0;
+  }
+}
 
 /* section-dhu */
 .section-dhu {
@@ -106,11 +119,10 @@
 }
 @media screen and (max-width: 991px) {
   .section-dhu {
-    padding-top: 88px;
     text-align: center;
-    margin-bottom: 72px;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 160px;
   }
 }
 .section-dhu .title h2 {
@@ -184,11 +196,11 @@
 }
 @media screen and (max-width: 991px) {
   .section-web {
-    padding-top: 88px;
     text-align: center;
-    margin-bottom: 72px;
+    margin-bottom: 160px;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 120px;
   }
 }
 .section-web .title h2 {
@@ -265,7 +277,7 @@
   .section-languages {
     width: 100%;
     text-align: center;
-    margin-bottom: 72px;
+    margin-bottom: 160px;
   }
 }
 .section-languages h3 {
@@ -305,11 +317,7 @@
 .section-languages .languages-box p {
   font-size: 3.2rem;
   margin-top: 1.8rem;
-}
-@media screen and (max-width: 991px) {
-  .section-languages .languages-box .sub-box {
-    margin-bottom: 42px;
-  }
+  margin-bottom: 3.2rem;
 }
 .section-languages .languages-box .center-box {
   margin: 0 200px;
@@ -329,7 +337,7 @@
   .section-courses {
     width: 100%;
     text-align: center;
-    margin-bottom: 72px;
+    margin-bottom: 160px;
   }
 }
 .section-courses h3 {
@@ -562,7 +570,7 @@
   .section-graduates {
     width: 100%;
     text-align: center;
-    margin-bottom: 72px;
+    margin-bottom: 160px;
   }
 }
 .section-graduates h3 {
@@ -615,7 +623,7 @@
 }
 @media screen and (max-width: 991px) {
   .section-graduates .graduate-wada {
-    margin-bottom: 5.6rem;
+    margin-bottom: 6.4rem;
   }
 }
 
@@ -655,20 +663,20 @@
 
 .footer {
   max-width: 1980px;
-  min-width: 480px;
 }
 .footer .footer_subscribe {
   min-height: 360px;
   background-color: #ccc;
   text-align: center;
   display: flex;
-  justify-content: center;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   align-items: center;
 }
 @media screen and (max-width: 991px) {
   .footer .footer_subscribe {
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 3.2rem;
   }
 }
 .footer .footer_subscribe h3 {
@@ -699,6 +707,7 @@
   /* vertical-align: middle; */
   justify-content: center;
   align-items: center;
+  min-width: 320px;
 }
 .footer .footer_subscribe input {
   width: 560px;
@@ -730,6 +739,11 @@
   border-radius: 0 8px 8px 0;
   text-align: center;
 }
+@media screen and (max-width: 991px) {
+  .footer .footer_subscribe .send-btn {
+    padding: 20px 26px;
+  }
+}
 
 .footer_navigation {
   height: 104px;
@@ -739,6 +753,14 @@
   align-items: center;
   flex-wrap: wrap;
   color: #fff;
+  padding: 0 4rem;
+}
+@media screen and (max-width: 768px) {
+  .footer_navigation {
+    justify-content: center;
+    padding: 4rem;
+    gap: 3rem;
+  }
 }
 .footer_navigation ul {
   display: flex;

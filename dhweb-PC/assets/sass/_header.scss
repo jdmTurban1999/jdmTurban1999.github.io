@@ -6,6 +6,10 @@
     background-color: #FFF;
     margin-bottom: 86px;
 
+    @media screen and (max-width:991px) {
+        margin-bottom: 0;
+    }
+
     &-topicon {
         // background-image: url("../images/header_image.png");
         // background-repeat: no-repeat;

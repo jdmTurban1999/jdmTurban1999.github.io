@@ -1,18 +1,20 @@
 .footer {
     max-width: 1980px;
-    min-width: 480px;
+    // min-width: 480px;
 
     .footer_subscribe {
         min-height: 360px;
         background-color: #ccc;
         text-align: center;
         display: flex;
-        justify-content: center;
-        /* justify-content: space-evenly; */
+        // justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
 
         @media screen and (max-width: 991px) {
             flex-wrap: wrap;
+            justify-content: center;
+            padding: 3.2rem;
         }
 
         h3 {
@@ -47,6 +49,7 @@
             /* vertical-align: middle; */
             justify-content: center;
             align-items: center;
+            min-width: 320px;
         }
 
         input {
@@ -78,6 +81,10 @@
             font-weight: 700;
             border-radius: 0 8px 8px 0;
             text-align: center;
+
+            @media screen and (max-width: 991px) {
+                padding: 20px 26px;
+            }
         }
 
     }
@@ -94,6 +101,13 @@
     align-items: center;
     flex-wrap: wrap;
     color: #fff;
+    padding: 0 4rem;
+
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+        padding: 4rem;
+        gap: 3rem;
+    }
 
     ul {
         display: flex;
