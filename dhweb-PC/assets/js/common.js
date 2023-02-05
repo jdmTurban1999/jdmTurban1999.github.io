@@ -18,6 +18,15 @@
 //   $('.invisible-btn').css({'opacity':'0','transition': '0.3s'});
 // })
 
+$('#gNav-content li a').click(function() {
+  var speed = 2000;
+  var href= $(this).attr("href");
+  var target = $(href == "#" || href == "" ? 'html' : href);
+  var position = target.offset().top-20;
+  $('body,html').animate({scrollTop:position}, speed, 'swing');
+  return false;
+});
+    
 $('.openBtn').click(function(){
   $(this).toggleClass('active');
   $('#gNav').toggleClass('panelActive');
@@ -45,20 +54,12 @@ $(window).scroll(function(){
 	}
 });
 
-topBtn.on("click",function(event) {
-	event.preventDefault();  
-	$('body,html').animate({ 
-			scrollTop: 0
-	}, 500);
-});
-
-$('a[href^="#"]').click(function() {
-  var speed = 2000;
-  var href= $(this).attr("href");
-  var target = $(href == "#" || href == "" ? 'html' : href);
-  var position = target.offset().top-20;
-  $('body,html').animate({scrollTop:position}, speed, 'swing');
-  return false;
+$('.scrollTopBtn').click(function () {
+  $('body,html').animate({
+    scrollTop: 0//ページトップまでスクロール
+  }, 1500,"easeInOutQuint");//ページトップスクロールの速さ※数字が大きいほど遅くなる, easingプラグインでアニメーション速度に変化
+//linear、swing、jswing、easeInQuad、easeOutQuad、easeInOutQuad、easeInCubic、easeOutCubic、easeInOutCubic、easeInQuart、easeOutQuart、easeInOutQuart、easeInQuint、easeOutQuint、easeInOutQuint、easeInSine、easeOutSine、easeInOutSine、easeInExpo、easeOutExpo、easeInOutExpo、easeInCirc、easeOutCirc、easeInOutCirc、easeInElastic、easeOutElastic、easeInOutElastic、easeInBack、easeOutBack、easeInOutBack、easeInBounce、easeOutBounce、easeInOutBounceなどから選択可能
+  return false;//リンク自体の無効化
 });
 
 // $(function(){
